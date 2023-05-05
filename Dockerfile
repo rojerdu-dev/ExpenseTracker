@@ -7,7 +7,7 @@ WORKDIR /app
 # copy requirements.txt from local machine to container
 # pip install requirements.txt
 COPY requirements.txt requirements.txt
-RUN pip install --no-chache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # copy the rest of the directory from local machine to container
 COPY . /app
